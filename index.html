@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asteroids: Galactic Warfare V3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="game-container">
+
+    <header>
+      <h1>ASTEROIDS: GALACTIC WARFARE</h1>
+      <p>V3 — THE ULTIMATE SPACE SURVIVAL</p>
+    </header>
+
+    <section id="hud">
+      <div class="stat">SCORE: <span id="score">0</span></div>
+      <div class="stat">GOLD: <span id="gold">0</span></div>
+      <div class="stat">ROUND: <span id="round">1</span></div>
+      <div class="stat">LIVES: <span id="lives">20</span></div>
+    </section>
+
+    <main id="game-area">
+
+      <canvas id="gameCanvas"></canvas>
+
+      <div id="start-screen" class="overlay">
+        <h2>GALACTIC WARFARE</h2>
+        <p>Defend the galaxy. Survive 500 rounds.</p>
+        <p>Collect gold, evolve your weapons, and defeat legendary bosses.</p>
+        <button id="start-button">INITIALIZE MISSION</button>
+      </div>
+
+      <div id="shop-screen" class="overlay hidden">
+        <h2>GALACTIC UPGRADE SHOP</h2>
+        <p>UPGRADE YOUR SHIP</p>
+        <p>GOLD: <span id="shop-gold">0</span></p>
+        <div id="shop-items"></div>
+        <button id="continue-button">RETURN TO BATTLE</button>
+      </div>
+
+      <div id="game-over-screen" class="overlay hidden">
+        <h2>MISSION FAILED</h2>
+        <p>FINAL SCORE: <span id="final-score">0</span></p>
+        <p>HIGHEST ROUND: <span id="final-round">1</span></p>
+        <button id="restart-button">RESTART MISSION</button>
+      </div>
+
+    </main>
+
+    <section id="controls">
+      <p>MOVE: W / UP ARROW</p>
+      <p>ROTATE: A / D OR LEFT / RIGHT ARROWS</p>
+      <p>SHOOT: SPACE</p>
+      <p>PAUSE: P</p>
+    </section>
+
+  </div>
+
+  <script src="game.js"></script>
+
+</body>
+</html>
